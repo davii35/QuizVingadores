@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    font-size: 10px;
+
+    --fonte-titulos: "Oswald", sans-serif;
+    --fonte-textos: "Rubik", sans-serif;
+
+    --verde: #C7FF37;
+    --laranja: #F45A1A;
+    --azul: #32C1B6;
+    --branco: #FFF;
+    --preto: #000;
+}

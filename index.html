@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Vingadores</title>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+    <main>
+        <section class="apresentacao">
+            <h1 class="apresentacao__titulo">Quiz Vingadores</h1>
+            <h2 class="apresentacao__subtitulo">Descubra quem você seria dos vingadores!</h2>
+            <button class="apresentacao__btn-comecar">Começar!</button>
+        </section>
+        <section class="quiz sessao-oculta">
+            <form class="quiz__form" action="resultado.html" method="get">
+                <fieldset class="form__pergunta pergunta-atual">
+                    <legend class="pergunta__texto">Você está em uma missão e o plano original falha. O que você faz? </legend>
+
+                    <input type="radio" name="radio-p1" class="pergunta__radio" value="A" id="p1-a">
+                    <label class="pergunta__opcao" for="p1-a">Recuo, avalio a situação e só então traço uma nova abordagem</label>
+    
+                    <input type="radio" name="radio-p1" class="pergunta__radio" value="B" id="p1-b">
+                    <label class="pergunta__opcao" for="p1-b">Improviso na hora — sempre tem um plano B (ou C).</label>
+    
+                    <input type="radio" name="radio-p1" class="pergunta__radio" value="C" id="p1-c">
+                    <label class="pergunta__opcao" for="p1-c">Atuo com calma, mas se a coisa sair do controle, ninguém me segura</label>
+    
+                    <input type="radio" name="radio-p1" class="pergunta__radio" value="D" id="p1-d">
+                    <label class="pergunta__opcao" for="p1-d">Tomo a liderança no momento e reorganizo o grupo.</label>
+    
+                    <input type="radio" name="radio-p1" class="pergunta__radio" value="E" id="p1-e">
+                    <label class="pergunta__opcao" for="p1-e">Me adapto rapidamente e ajo de forma silenciosa e estratégica.</label>
+
+                    <button type="button" class="pergunta__btn-proxima" data-indice="0">Próxima</button>
+                </fieldset>
+                
+                <fieldset class="form__pergunta">
+                    <legend class="pergunta__texto">Durante uma discussão na equipe, alguém claramente está errado. O que você faz?</legend>
+                    
+                    <input type="radio" name="radio-p2" class="pergunta__radio" value="A" id="p2-a">
+                    <label class="pergunta__opcao" for="p2-a">Ouço os dois lados e tento encontrar uma solução que una todos.</label>
+                    
+                    <input type="radio" name="radio-p2" class="pergunta__radio" value="B" id="p2-b">
+                    <label class="pergunta__opcao" for="p2-b">Já vi o suficiente — corto o papo e sigo o que acho certo.</label>
+                    
+                    <input type="radio" name="radio-p2" class="pergunta__radio" value="C" id="p2-c">
+                    <label class="pergunta__opcao" for="p2-c">Observo mais do que falo, e deixo minha opinião apenas quando necessário.</label>
+                    
+                    <input type="radio" name="radio-p2" class="pergunta__radio" value="D" id="p2-d">
+                    <label class="pergunta__opcao" for="p2-d">Tento manter a paz, mas se for empurrado demais, perco a paciência.</label>
+                    
+                    <input type="radio" name="radio-p2" class="pergunta__radio" value="E" id="p2-e">
+                    <label class="pergunta__opcao" for="p2-e">Aponto o erro com argumentos, sem rodeios. Objetividade acima de tudo.</label>
+
+                    <button type="button" class="pergunta__btn-proxima" data-indice="1">Próxima</button>
+                </fieldset>
+                
+                <fieldset class="form__pergunta">
+                    <legend class="pergunta__texto">Você descobre que alguém da sua equipe está escondendo informações. Como reage?</legend>
+                    
+                    <input type="radio" name="radio-p3" class="pergunta__radio" value="A" id="p3-a">
+                    <label class="pergunta__opcao" for="p3-a">Me aproximo aos poucos e tento entender o motivo antes de agir.</label>
+                    
+                    <input type="radio" name="radio-p3" class="pergunta__radio" value="B" id="p3-b">
+                    <label class="pergunta__opcao" for="p3-b">Confronto na hora — transparência é essencial em um time.</label>
+                    
+                    <input type="radio" name="radio-p3" class="pergunta__radio" value="C" id="p3-c">
+                    <label class="pergunta__opcao" for="p3-c">Faço minhas próprias investigações sem alertar ninguém.</label>
+                    
+                    <input type="radio" name="radio-p3" class="pergunta__radio" value="D" id="p3-d">
+                    <label class="pergunta__opcao" for="p3-d">Evito um confronto direto, mas deixo claro que estou atento.</label>
+                    
+                    <input type="radio" name="radio-p3" class="pergunta__radio" value="E" id="p3-e">
+                    <label class="pergunta__opcao" for="p3-e">Tento mediar a situação, focando em restaurar a confiança.</label>
+
+                    <button type="button" class="pergunta__btn-proxima" data-indice="2">Próxima</button>
+                </fieldset>
+                
+                <fieldset class="form__pergunta">
+                    <legend class="pergunta__texto">Você é pego de surpresa em uma emboscada. Qual é sua primeira reação? </legend>
+                    
+                    <input type="radio" name="radio-p4" class="pergunta__radio" value="A" id="p4-a">
+                    <label class="pergunta__opcao" for="p4-a">Confio nos meus reflexos e revido sem hesitar.</label>
+                    
+                    <input type="radio" name="radio-p4" class="pergunta__radio" value="B" id="p4-b">
+                    <label class="pergunta__opcao" for="p4-b">Mantenho a cabeça fria e analiso todas as saídas possíveis.</label>
+                    
+                    <input type="radio" name="radio-p4" class="pergunta__radio" value="C" id="p4-c">
+                    <label class="pergunta__opcao" for="p4-c">Luto, mas me certifico de proteger os outros antes de mim.</label>
+                    
+                    <input type="radio" name="radio-p4" class="pergunta__radio" value="D" id="p4-d">
+                    <label class="pergunta__opcao" for="p4-d">Canalizo minha força interna, mas luto para manter o controle.</label>
+                    
+                    <input type="radio" name="radio-p4" class="pergunta__radio" value="E" id="p4-e">
+                    <label class="pergunta__opcao" for="p4-e">Aja rápido e sem ser visto — essa é minha zona de conforto.</label>
+
+                    <button type="button" class="pergunta__btn-proxima" data-indice="3">Próxima</button>
+                </fieldset>
+                
+                <fieldset class="form__pergunta">
+                    <legend class="pergunta__texto">Qual dessas frases mais se aproxima do que você acredita?</legend>
+                    
+                    <input type="radio" name="radio-p5" class="pergunta__radio" value="A" id="p5-a">
+                    <label class="pergunta__opcao" for="p5-a">“Unir é mais difícil que lutar — e mais importante também.”</label>
+                    
+                    <input type="radio" name="radio-p5" class="pergunta__radio" value="B" id="p5-b">
+                    <label class="pergunta__opcao" for="p5-b">“A lógica vence qualquer desafio.”</label>
+                    
+                    <input type="radio" name="radio-p5" class="pergunta__radio" value="C" id="p5-c">
+                    <label class="pergunta__opcao" for="p5-c">“O silêncio às vezes diz mais do que mil palavras.”</label>
+                    
+                    <input type="radio" name="radio-p5" class="pergunta__radio" value="D" id="p5-d">
+                    <label class="pergunta__opcao" for="p5-d">“Nem sempre sou compreendido(a), mas faço o que precisa ser feito.”</label>
+                    
+                    <input type="radio" name="radio-p5" class="pergunta__radio" value="E" id="p5-e">
+                    <label class="pergunta__opcao" for="p5-e">“Confio nos meus instintos, eles nunca me deixaram na mão.”</label>
+
+                    <button type="button" class="pergunta__btn-proxima" data-indice="4">Próxima</button>
+                </fieldset>
+                
+                <fieldset class="form__pergunta">
+                    <legend class="pergunta__texto">Você tem que tomar uma decisão difícil, com impacto para todos. Como escolhe?</legend>
+                    
+                    <input type="radio" name="radio-p6" class="pergunta__radio" value="A" id="p6-a">
+                    <label class="pergunta__opcao" for="p6-a">Avalio friamente os fatos e tomo a decisão mais eficiente.</label>
+                    
+                    <input type="radio" name="radio-p6" class="pergunta__radio" value="B" id="p6-b">
+                    <label class="pergunta__opcao" for="p6-b">Considero os valores e o bem maior acima de tudo.</label>
+                    
+                    <input type="radio" name="radio-p6" class="pergunta__radio" value="C" id="p6-c">
+                    <label class="pergunta__opcao" for="p6-c">Evito chamar atenção, mas trabalho por trás pra resolver.</label>
+                    
+                    <input type="radio" name="radio-p6" class="pergunta__radio" value="D" id="p6-d">
+                    <label class="pergunta__opcao" for="p6-d">Confio em minha força pessoal para proteger os outros.</label>
+                    
+                    <input type="radio" name="radio-p6" class="pergunta__radio" value="E" id="p6-e">
+                    <label class="pergunta__opcao" for="p6-e">Faço o possível para manter o equilíbrio emocional e racional.</label>
+
+                    <button type="button" class="pergunta__btn-proxima" data-indice="5">Próxima</button>
+                </fieldset>
+                
+                <fieldset class="form__pergunta">
+                    <legend class="pergunta__texto">Como você reage à fama ou reconhecimento?</legend>
+                    
+                    <input type="radio" name="radio-p7" class="pergunta__radio" value="A" id="p7-a">
+                    <label class="pergunta__opcao" for="p7-a">Acho útil, mas não me deslumbro — há coisas mais importantes.</label>
+                    
+                    <input type="radio" name="radio-p7" class="pergunta__radio" value="B" id="p7-b">
+                    <label class="pergunta__opcao" for="p7-b">Não gosto dos holofotes. Prefiro fazer meu trabalho e sumir.</label>
+                    
+                    <input type="radio" name="radio-p7" class="pergunta__radio" value="C" id="p7-c">
+                    <label class="pergunta__opcao" for="p7-c">Às vezes é divertido, mas sei que não define quem eu sou.</label>
+                    
+                    <input type="radio" name="radio-p7" class="pergunta__radio" value="D" id="p7-d">
+                    <label class="pergunta__opcao" for="p7-d">Fama não me afeta. O que importa é o impacto do que faço.</label>
+                    
+                    <input type="radio" name="radio-p7" class="pergunta__radio" value="E" id="p7-e">
+                    <label class="pergunta__opcao" for="p7-e">Eu sou um pouco do show, sim — e me garanto nisso.</label>
+
+                    <button type="submit" class="pergunta__btn-proxima" data-indice="6">Ver resultado</button>
+                </fieldset>
+            </form>
+        </section>
+        <script src="src/js/script.js"></script>
+    </main>
+</body>
+
+</html>
