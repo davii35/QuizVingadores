@@ -51,7 +51,7 @@ function insereConteudo() {
 }
 
 btnVoltar.addEventListener("click", () => {
-    window.location.href = "../index.html"
+    window.location.href = "/QuizVingadores/"
 })
 
 document.addEventListener("DOMContentLoaded", () => {
